@@ -35,7 +35,7 @@ exports.addProject = function(req, res) {
       console.log(err);
     }
 
-    res.redirect('/home');
+    //res.redirect('/home');
     res.send('Add new project works!');
   }
 
