@@ -12,6 +12,7 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var project = require('./routes/project');
 var add_diary = require('./routes/add_diary');
+var user_profile = require('./routes/user_profile');
 // Example route
 // var user = require('./routes/user');
 
@@ -56,7 +57,8 @@ app.get('/project/:id', project.projectInfo);
 app.post('/project/new', project.addProject);
 app.post('/project/:id/delete', project.deleteProject);
 
-app.get('/user_profile', add_diary.view);
+app.get('/add_diary', add_diary.view)
+app.get('/user_profile', user_profile.view);
 app.post('/user_profile/new', add_diary.addTripToPage);
 app.post('/user_profile/:id/delete', add_diary.deleteTrip);
 // Example route

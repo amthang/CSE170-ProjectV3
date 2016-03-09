@@ -4,11 +4,10 @@ exports.view = function(req, res){
 
 	models.Project
 		.find()
-		.sort('date')
-		.exec(renderProjects);
+		.exec(renderPage);
 
-	function renderProjects(err, projects) {
-		res.render('user_profile', { 'profile_data': projects });
+	function renderPage(err, projects) {
+		res.render('add_diary');
 	}
 
 };
