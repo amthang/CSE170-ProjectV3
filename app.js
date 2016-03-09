@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var project = require('./routes/project');
 var add_diary = require('./routes/add_diary');
 var user_profile = require('./routes/user_profile');
+var simplyRender = require('./routes/simplyRender');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,16 +52,20 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/home', index.view);
-app.get('/project/:id', project.projectInfo);
-app.post('/project/new', project.addProject);
-app.post('/project/:id/delete', project.deleteProject);
+// app.get('/', index.view);
+// app.get('/home', index.view);
+// app.get('/project/:id', project.projectInfo);
+// app.post('/project/new', project.addProject);
+// app.post('/project/:id/delete', project.deleteProject);
 
+
+app.get('/', simplyRender.renderHomepage);
 app.get('/add_diary', add_diary.view)
 app.get('/user_profile', user_profile.view);
 app.post('/user_profile/new', add_diary.addTripToPage);
 app.post('/user_profile/:id/delete', add_diary.deleteTrip);
+
+
 // Example route
 // app.get('/users', user.list);
 
