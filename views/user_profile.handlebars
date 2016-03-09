@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>My Profile</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../css/stylish-portfolio.css" />
+        <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+        <link rel="stylesheet" href="../css/public_profile.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/feature_newadditions.css" />
+        <link rel="stylesheet" href="css/custom_changes.css" />
+    </head>
+
+<body>
+
+    <section>
+        <img class="profile_img" id="profile_img" src="../img/camera.jpg"></img>
+    </section>
+
+    <h2>Welcome to your profile</h2>
+
+<div class="diaries" id="diaries">
+    <ul class="timeline">
+        <li class="">
+            <div class="timeline-badge">
+              <a><i class="fa fa-circle" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>+</h4>
+                </div>
+                <!-- <a href="/add_tripdiary" class="btn-theme"> -->
+                    <div class="timeline-body">
+
+
+<form id="new-project-form" role="form">
+    <div class="form-group">
+      <label for="title">Title for New Project:</label>
+      <input type="text" class="form-control" id="title" placeholder="Project Name">
+    </div>
+    <div class="form-group">
+      <label for="image_url">Project image URL</label>
+      <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_image.jpg">
+    </div>
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="text" class="form-control" id="date" placeholder="January 1">
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary</label>
+      <textarea type="text" class="form-control" id="summary" rows="3" placeholder="Wow, Very Project!  So much summary!"></textarea>
+    </div>
+    <button id="newProjectSubmitButton2" type="button" class="btn btn-default">Submit</button>
+  </form>
+
+                        <!-- <h2><span class="glyphicon glyphicon-plus"></span>Add a new trip</h2> -->
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">+</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        {{#each profile_data}}
+        <li class="{{invert}}">
+            <div class="timeline-badge">
+              <a><i class="{{circle_position}}" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>{{title}}</h4>
+                </div>
+                <!-- <a href="/user_see_diary_{{location}}" class="btn-theme"> -->
+                    <div class="timeline-body">
+                        <!-- <img id="img_size" src="{{image}}"></img>
+                        <p>{{description}}</p> -->
+
+                        <div class="project" id="project{{id}}">
+            <div class="thumbnail">
+                <a href="#">
+                    <img src="{{image}}" alt="Lorem Pixel image" class="img project-img">
+                    <p>{{title}}</p>
+                </a>
+                <div class="details"></div>
+            </div>
+        </div>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">{{date}}</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        {{/each}}
+        
+        <li class="clearfix no-float"></li>
+    </ul>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/add_diary.js"></script>
+
+</body>
+
+</html>
