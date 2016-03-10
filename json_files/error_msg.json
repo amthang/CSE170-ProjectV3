@@ -3,5 +3,11 @@
 		{
 			"msg": "Search Results not found."
 		} 
+	],
+
+	"trip_errMsg" : [
+		{
+			"msg": "Trip was not found."
+		}
 	]
 }

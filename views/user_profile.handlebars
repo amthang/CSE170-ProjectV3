@@ -1,16 +1,8 @@
 <html>
     <head>
-        <title>My Profile</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/main.css" />
-        <link rel="stylesheet" href="../css/stylish-portfolio.css" />
-        <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+        {{> head_info}}
+
         <link rel="stylesheet" href="../css/public_profile.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/feature_newadditions.css" />
-        <link rel="stylesheet" href="css/custom_changes.css" />
     </head>
 
 <body>
@@ -24,38 +16,16 @@
 <div class="diaries" id="diaries">
     <ul class="timeline">
         <li class="">
-            <div class="timeline-badge">
+            <!-- <div class="timeline-badge">
               <a><i class="fa fa-circle" id=""></i></a>
-            </div>
+            </div> -->
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4>+</h4>
                 </div>
                 <a href="/add_diary" class="btn-theme">
                     <div class="timeline-body">
-
-
-<!-- <form id="new-project-form" role="form">
-    <div class="form-group">
-      <label for="title">Title for New Project:</label>
-      <input type="text" class="form-control" id="title" placeholder="Project Name">
-    </div>
-    <div class="form-group">
-      <label for="image_url">Project image URL</label>
-      <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_image.jpg">
-    </div>
-    <div class="form-group">
-      <label for="date">Date</label>
-      <input type="text" class="form-control" id="date" placeholder="January 1">
-    </div>
-    <div class="form-group">
-      <label for="summary">Summary</label>
-      <textarea type="text" class="form-control" id="summary" rows="3" placeholder="Wow, Very Project!  So much summary!"></textarea>
-    </div>
-    <button id="newProjectSubmitButton2" type="button" class="btn btn-default">Submit</button>
-  </form> -->
-
-                        <h2><span class="glyphicon glyphicon-plus"></span>Add a new trip</h2>
+                        <h2><span class="glyphicon glyphicon-plus"></span> Add a new trip</h2>
                     </div>
                     <div class="timeline-footer">
                         <p class="text-right">+</p>
@@ -64,10 +34,10 @@
             </div>
         </li>
         {{#each profile_data}}
-        <li class="{{invert}}">
-            <div class="timeline-badge">
+        <li class="{{invert}}" id="profile_blocks">
+            <!-- <div class="timeline-badge">
               <a><i class="{{circle_position}}" id=""></i></a>
-            </div>
+            </div> -->
             <div class="timeline-panel">
                 <div class="timeline-heading">
                     <h4>{{title}}</h4>
@@ -98,8 +68,8 @@
         <li class="clearfix no-float"></li>
     </ul>
 </div>
-
-<script src="https://code.jquery.com/jquery.js"></script>
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/add_diary.js"></script>
 

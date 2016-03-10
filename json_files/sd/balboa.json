@@ -1,0 +1,21 @@
+{
+	"trip_title": "Balboa Park Day Trip",
+
+	"trip_info":[
+		{
+			"img": "/images/search_results/balboa/caro.jpg",
+			"place": "Carousel in the Park",
+			"description": "This was a fun time for the kids to enjoy their ride of the day before heading back home."
+		},
+		{
+			"img": "/images/search_results/balboa/fossil.jpg",
+			"place": "Natural History Museum",
+			"description": "This museum had a lot of information and interesting displays."
+		},
+		{
+			"img": "/images/search_results/balboa/space.jpg",
+			"place": "Air and Space Museum",
+			"description": "My neck hurts from looking up at all the planes that were hung from the ceiling, but it was worth it!!"
+		}
+	]
+}

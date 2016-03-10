@@ -16,7 +16,7 @@ function initializePage() {
 		var idNumber = projectID.substr('project'.length);
 
 		// this is the URL we'll call
-		var url_call = '/project/'+idNumber;
+		var url_call = '/user_profile/'+idNumber;
 
 		// How to respond to the GET request
 		function addProjectDetails(project_json) {

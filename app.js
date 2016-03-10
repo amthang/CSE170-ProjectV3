@@ -14,6 +14,8 @@ var project = require('./routes/project');
 var add_diary = require('./routes/add_diary');
 var user_profile = require('./routes/user_profile');
 var simplyRender = require('./routes/simplyRender');
+var search_results = require('./routes/search_results');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -61,9 +63,27 @@ if ('development' == app.get('env')) {
 
 app.get('/', simplyRender.renderHomepage);
 app.get('/add_diary', add_diary.view)
+app.get('/search_results', search_results.renderResults);
 app.get('/user_profile', user_profile.view);
+app.get('/user_profile/:id', user_profile.tripInfo);
 app.post('/user_profile/new', add_diary.addTripToPage);
 app.post('/user_profile/:id/delete', add_diary.deleteTrip);
+app.post('/search_results', search_results.checkSearch);
+
+
+// Render these pages when viewing a trip
+app.get('/view_trip_balboa', search_results.displayBalboa);
+// app.get('/view_trip_potato_chip', search_results.displayTrip);
+// app.get('/view_trip_downtown_sd', search_results.displayTrip);
+// app.get('/view_trip_la_jolla_surf', search_results.displayTrip);
+// app.get('/view_trip_anza_borrego_camping', search_results.displayTrip);
+// app.get('/view_trip_');
+// app.get('/view_trip_');
+// app.get('/view_trip_');
+// app.get('/view_trip_');
+// app.get('/view_trip_');
+// app.get('/view_trip_');
+// app.get('/view_trip_');
 
 
 // Example route

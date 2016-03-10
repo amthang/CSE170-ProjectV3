@@ -1,0 +1,41 @@
+{
+	"city" : "san diego",
+
+	"places" : [
+		{
+			"img": "/images/search_results/balboa.jpg",
+			"name": "Balboa Park Day Trip",
+			"city": "San Diego",
+			"description": "My day in Balboa! What a lovely time.",
+			"trip_name" : "balboa"
+		},
+		{
+			"img": "/images/search_results/potato_chip.jpg",
+			"name": "Katie's Potato Chip Rock Hike",
+			"city": "San Diego",
+			"description": "This hike was okay, too hyped up as what it offers.",
+			"trip_name" : "potato_chip"
+		},
+		{
+			"img": "/images/search_results/gaslamp.jpg",
+			"name": "Downtown San Diego Bar Crawl",
+			"city": "San Diego", 
+			"description": "A place for nightlife.",
+			"trip_name" : "downtown_sd"
+		},
+		{
+			"img": "/images/search_results/La_Jolla_Beach.jpg",
+			"name": "La Jolla Weekend Surf Trip",
+			"city": "San Diego",
+			"description": "Surf's up!",
+			"trip_name" : "la_jolla_surf"
+		},
+		{
+			"img": "/images/search_results/Anza_Borrego_Camping.jpg",
+			"name": "Anza Borrego Camping Trip 2015",
+			"city": "San Diego",
+			"description": "My nights under the stars!",
+			"trip_name" : "anza_borrego_camping"
+		}
+	]
+}

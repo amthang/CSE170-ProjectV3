@@ -12,3 +12,20 @@ exports.view = function(req, res){
 	}
 
 };
+
+exports.tripInfo = function(req, res) { 
+  var projectID = req.params.id;
+
+  // query for the specific project and
+  // call the following callback
+
+models.Project
+.find(projectID)
+.exec(afterQuery);
+
+
+  function afterQuery(err, projects) {
+    if(err) console.log(err);
+    res.json(projects[0]);
+  }
+};

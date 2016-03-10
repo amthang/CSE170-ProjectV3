@@ -1,0 +1,21 @@
+{
+	"city" : "hogwarts",
+	
+	"places" : [
+		{ 	
+		    "img": "https://c1.staticflickr.com/5/4098/5014156072_9da25fe83b_b.jpg",
+		    "trip_name": "Harry's Time at Hogwarts",
+		    "city": "School of Hogwarts",
+		    "description": "My study abroad at Hogwarts was amazing! Here is why...",
+		    "link" : "/views/saved_profiles_views/HarryPotter"
+		},
+		{ 	
+		    "img": "https://upload.wikimedia.org/wikipedia/commons/5/58/Hogwarts_Great_Hall-geograph-3264173.jpg",
+		    "trip_name": "Dining at Hogwarts",
+		    "city": "Hogwarts",
+		    "description": "I I arrived to the party early and they have yet to set up the rest of the tables up. Decorate the walkway with the tables already!",
+		    "link" : "/travel_diary_dining"
+		}
+		
+	]
+}

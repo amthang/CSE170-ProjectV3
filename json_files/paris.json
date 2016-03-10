@@ -1,0 +1,21 @@
+{
+	"city" : "paris",
+	
+	"places" : [
+		{ 	
+		    "img": "https://i.ytimg.com/vi/O4W4X_UBRkg/maxresdefault.jpg",
+		    "trip_name": "Brittany's Paris Trip",
+		    "city": "Paris",
+		    "description": "My study abroad in France was amazing! Here is why...",
+		    "link" : "/travel_diary_brittany"
+		},
+		{ 	
+		    "img": "https://pixabay.com/static/uploads/photo/2015/08/24/15/00/wine-905098_960_720.jpg",
+		    "trip_name": "Wine Tasting in Paris",
+		    "city": "Paris",
+		    "description": "I went solo to a wine, cheese, and charcuterie lunch and absolutely loved it. The wines were very nice, and Neil, our sommelier was so knowledgeable and fun. It was a terrific small group of 5, and we were in a great wine library at the back. If I could transport this room to my home, I'd be thrilled. Highly recommended.",
+		    "link" : "/travel_diary_wine"
+		}
+		
+	]
+}
