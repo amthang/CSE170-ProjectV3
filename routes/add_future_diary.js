@@ -6,7 +6,7 @@ exports.view = function(req, res){
 		.find()
 		.exec(renderPage);
 
-	function renderPage(err, projects) {
+	function renderPage(err, future_travels) {
 		res.render('add_future_diary');
 	}
 
@@ -20,7 +20,7 @@ exports.addTripToPage = function(req, res){
 		// "circle_position" : "fa fa-circle",
 		"title" : form_data["project_title"],
 		// "location" : "newTrip",
-		 "image" : form_data["image_url"],
+		"image" : form_data["image_url"],
 		//"image" : form_data["image_upload"],
 		"description" : form_data["summary"],
 		"date" : form_data["date"],

@@ -8,6 +8,9 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 var mongoose = require('mongoose');
+var img_upload = require('express-fileupload');
+var multer = require('multer');
+
 
 var index = require('./routes/index');
 var project = require('./routes/project');
@@ -17,6 +20,7 @@ var simplyRender = require('./routes/simplyRender');
 var search_results = require('./routes/search_results');
 var future_diary = require('./routes/future_diary');
 var add_future_diary = require('./routes/add_future_diary');
+var signin = require('./routes/signin');
 
 // Example route
 // var user = require('./routes/user');
@@ -49,11 +53,29 @@ app.use(express.cookieParser('Intro HCI secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(img_upload);
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/images/img_upload/')
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + '.jpg') //Appending .jpg
+  }
+})
+
+var upload = multer({ storage: storage,
+  onFileUploadComplete: function (file, req, res) {
+    console.log(file.fieldname + ' uploaded to  ' + file.path);
+  }
+
+});
 
 // Add routes here
 // app.get('/', index.view);
@@ -86,6 +108,7 @@ app.get('/forgot_pw', simplyRender.renderForgotPw);
 app.get('/sent_pw', simplyRender.renderSentPw);
 app.get('/terms', simplyRender.renderTermsCond);
 app.get('/search_results_feat', simplyRender.renderMoreFeatTrips);
+app.post('/login', signin.view);
 
 // Render these pages for the hamurger menu -- USER
 app.get('/saved_profiles', simplyRender.renderSavedProfiles);
@@ -125,6 +148,7 @@ app.get('/view_trip_potato_chip', search_results.displayPotatoChip);
 
 // Example route
 // app.get('/users', user.list);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

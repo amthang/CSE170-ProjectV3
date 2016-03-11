@@ -45,9 +45,10 @@ function onceClear(err) {
 
   // loop over the projects, construct and save an object from each one
   // Note that we don't care what order these saves are happening in...
-  var to_save_count = projects_json.length;
-  for(var i=0; i<projects_json.length; i++) {
-    var json = projects_json[i];
+  var projects = projects_json["default_projects"]
+  var to_save_count = projects.length;
+  for(var i=0; i<projects.length; i++) {
+    var json = projects[i];
     var proj = new models.Project(json);
 
     proj.save(function(err, proj) {
@@ -59,28 +60,28 @@ function onceClear(err) {
         console.log('DONE');
         // The script won't terminate until the 
         // connection to the database is closed
-        mongoose.connection.close()
+        //mongoose.connection.close()
       }
     });
   }
 }
 
-// Step 2: Remove all existing documents
 models.Future
   .find()
   .remove()
-  .exec(onceClear); // callback to continue at
+  .exec(onceClear2); // callback to continue at
 
 // Step 3: load the data from the JSON file
-function onceClear(err) {
+function onceClear2(err) {
   if(err) console.log(err);
 
   // loop over the projects, construct and save an object from each one
   // Note that we don't care what order these saves are happening in...
-  var to_save_count = projects_json.length;
-  for(var i=0; i<projects_json.length; i++) {
-    var json = projects_json[i];
-    var proj = new models.Project(json);
+  var projects = future_json["future_trips"]
+  var to_save_count = projects.length;
+  for(var i=0; i<projects.length; i++) {
+    var json = projects[i];
+    var proj = new models.Future(json);
 
     proj.save(function(err, proj) {
       if(err) console.log(err);
@@ -96,4 +97,3 @@ function onceClear(err) {
     });
   }
 }
-
