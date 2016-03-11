@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head_info}}
+</head>
+<body>
+    {{> menu_bar_index}} 
+
+<section class="container">
+    <h2>Forgot password?</h2>
+    <p>Please enter your email below so we can send you your password.</p>
+    <form action="#">
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="email" class="form-control" placeholder="Email">
+          </div>
+
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <input type="email" class="form-control" placeholder="Confirm email">
+        </div>
+        
+        <!--<button type="submit" class="float">Login</button>-->
+        <div class="row row_one">
+          <div class="col-xs-4 col-md-4">
+            <a href="/sent_pw" class="btn btn-dark btn-lg" id="sign">Submit</a>
+          </div>
+        </div>
+
+        <div class="row row_two_forgotpw">
+          <div class="col-xs-4 col-md-4">
+            <a href="/home" class="btn btn-dark btn-lg" id="sign">Cancel</a>
+          </div>
+        </div>
+       </form>
+</section>
+
+    {{> menu_bar_script}}
+
+</body>
+</html>

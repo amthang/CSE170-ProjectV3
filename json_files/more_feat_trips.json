@@ -1,0 +1,35 @@
+{
+	"city" : "More Featured Trips",
+	
+	"places" : [
+		{ 	
+		    "img": "images/more_features/boston_skyline.jpg",
+		    "trip_name": "A Week on the East",
+		    "city": "Boston",
+		    "description": "Started at the Boston Skyline, and ended who knows where",
+		    "link" : "/travel_diary_boston"
+		},
+		{ 	
+		    "img": "images/more_features/disney.jpg",
+		    "trip_name": "Things to Try at Disneyland California",
+		    "city": "Los Angeles",
+		    "description" : "Some things that I found that you have to try when you get the chance at Disneyland California!",
+		    "link" : "/travel_diary_disneyland"
+		},
+		{ 	
+		    "img": "images/more_features/hongkong.jpg",
+		    "trip_name": "Month in Hong Kong",
+		    "city": "Hong Kong",
+		    "description" : "My time in Hong Kong was a blast! Here are the places I visited...",
+		    "link" : "/travel_diary_hk"
+		},
+		{ 	
+		    "img": "images/more_features/wharf.jpg",
+		    "trip_name": "Navigate through San Francisco!",
+		    "city": "San Francisco",
+		    "description" : "Fisherman's Wharf, Golden Gate Bridge, Chinatown, Market Street, and the many other places YOU HAVE TO VISIT while you are in San Francisco! At least from my point of view!",
+		    "link" : "/travel_diary_sf"
+		}
+		
+	]
+}

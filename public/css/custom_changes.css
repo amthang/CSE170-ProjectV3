@@ -19,12 +19,26 @@
 
 #feat_name{
 	z-index: 100;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color: black;
+   font-weight: bold;
+   font-size: 20px;
+   position: absolute;
+   top: 88%;
+   right: 7%;
+}
+
+#feat_des{
+	z-index: 100;
 	position: absolute;
 	color: black;
 	font-size: 24px;
 	font-weight: bold;
 	top: 0px;
-	left: 30px;
+	left: 0px;
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 100%;
 }
 
 #contact_info{
@@ -94,4 +108,40 @@ body{
 
 #profile_blocks{
 	margin-bottom: 20px;
+}
+
+#support_image{
+	opacity: 0.5;
+}
+
+#profile_img{
+	position: relative;
+	height: 200px;
+	width: auto;
+}
+
+#profile_nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#profile_nav ul li a {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 12px;
+    float: left;
+}
+
+#profile_nav .current{
+	background-color: #999CCC;
 }

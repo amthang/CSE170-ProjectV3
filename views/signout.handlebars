@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    {{> head_info}}
+</head>
+<body>
+    <!-- Using partials to reduce the amount of code.
+        Look at the files with these names to find the code for it -->
+    {{> menu_bar_index}} 
+
+<section class="container">
+    <h2>Signed out</h2>
+    <h4>Thank you for using Wish Trip!</h4>
+
+        <div class="row row_two">
+          <div class="col-xs-4 col-md-4">
+            <a href="/signin" class="btn btn-dark btn-lg signup" id="sign">Sign In</a>
+          </div>
+        </div>
+
+        <div class="row row_three">
+          <div class="col-xs-4 col-md-4">
+            <a href="/home" class="btn btn-dark btn-lg signup" id="sign">Homepage</a>
+          </div>
+        </div>
+ 		</div>
+ </div>
+</section>
+    {{> menu_bar_script}}
+</body>
+</html>

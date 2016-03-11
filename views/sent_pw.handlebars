@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head_info}}
+</head>
+<body>
+    <!-- Using partials to reduce the amount of code.
+        Look at the files with these names to find the code for it -->
+    {{> menu_bar_index}} 
+
+<section class="container">
+    <h2>Email has been sent!</h2>
+    <p>Please check the email you provided for your password.</p>
+    <form action="#">
+        
+        <!--<button type="submit" class="float">Login</button>-->
+        <div class="row">
+          <!-- <div class="col-lg-10 col-lg-offset-1">
+            <div class="row"> -->
+
+              <div class="col-xs-4 col-md-4">
+                <a href="/signin" class="btn btn-dark btn-lg signup" id="sign">Login</a>
+              </div>
+                <div class="col-xs-4 col-md-4">
+                <a href="/home" class="btn btn-dark btn-lg signup" id="sign">Homepage</a>
+              </div>
+            <!-- </div>
+          </div> -->
+        </div>
+       </form>
+</section>
+
+    {{> menu_bar_script}}
+</body>
+</html>

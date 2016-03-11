@@ -1,0 +1,94 @@
+<html>
+    <head>
+        {{> head_info}}
+
+        <link rel="stylesheet" href="css/public_profile.css" />
+        <link rel="stylesheet" href="css/custom_changes.css" />
+    </head>
+
+<body>
+    {{> menu_bar_user}}
+    <section>
+        <img class="profile_img" id="profile_img" src="images/default_user.jpg"></img>
+    </section>
+
+    <h2><center>Future Travel Diaries</h2></center>
+
+    <section id="profile_nav">
+    <nav id="filter" class="col-md-4">
+        <ul>
+            <li><a href="/user_profile" class="btn-theme btn-small">Recorded Trips</a></li>
+            <li><a href="#" class="current btn-theme btn-small">Future Travels</a></li>
+            <li><a href="/saved_profiles" class="btn-theme btn-small">Saved Profiles</a></li>
+            <li><a href="/saved_trips" class="btn-theme btn-small">Saved Trips</a></li>
+        </ul>
+    </nav>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="diaries" id="diaries">
+        <ul class="timeline">
+            <li class="">
+                <!-- <div class="timeline-badge">
+                  <a><i class="fa fa-circle" id=""></i></a>
+                </div> -->
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>+</h4>
+                    </div>
+                    <a href="/add_future_diary" class="btn-theme">
+                        <div class="timeline-body">
+                            <h2><span class="glyphicon glyphicon-plus"></span> Add a new trip</h2>
+                        </div>
+                        <div class="timeline-footer">
+                            <p class="text-right">+</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            {{#each profile_data}}
+            <li class="{{invert}}" id="profile_blocks">
+                <!-- <div class="timeline-badge">
+                  <a><i class="{{circle_position}}" id=""></i></a>
+                </div> -->
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{title}}</h4>
+                    </div>
+                    <!-- <a href="/user_see_diary_{{location}}" class="btn-theme"> -->
+                        <div class="timeline-body">
+                            <!-- <img id="img_size" src="{{image}}"></img>
+                            <p>{{description}}</p> -->
+
+                            <div class="project" id="project{{id}}">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="{{image}}" alt="Lorem Pixel image" class="img project-img">
+                        <p>{{title}}</p>
+                    </a>
+                    <div class="details"></div>
+                </div>
+            </div>
+                        </div>
+                        <div class="timeline-footer">
+                            <p class="text-right">{{date}}</p>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            {{/each}}
+            
+            <li class="clearfix no-float"></li>
+        </ul>
+    </div>
+    
+    {{> menu_bar_script}}
+    <script src="/js/add_future_diary.js"></script>
+
+</body>
+
+</html>

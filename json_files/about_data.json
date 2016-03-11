@@ -1,0 +1,83 @@
+{
+	"services":[
+		{ 	"about": "Make your travel plans",
+		    "description": "Get information all about the place you want to travel to"
+		},
+		{ 	"about": "Share with your friends",
+			"description": "Let your friends see what you have done on your trip"
+		},
+		{ 	"about": "View other travel diaries",
+			"description": "Get inspiration from other people for your own trip"
+		},
+		{ 	"about": "Organize your trip",
+			"description": "Plan, share, and edit your travel itenary all in one place"
+		}   	
+	],
+
+	"feature": [
+		{ 	
+			"trip": "helenSF",
+			"person": "Helen Cheng",
+		    "description": "Exploring San Francisco!",
+		    "img": "sf.jpg"
+		},
+		{ 	
+			"trip": "stevenCanada",
+			"person": "Steven Duong",
+		    "description": "My Month in Canada",
+		    "img": "portfolio-2.jpg"
+		},	
+		{ 	
+			"trip": "anjelicaParis",
+			"person": "Anjelica Thang",
+		    "description": "A Day in Paris~",
+		    "img": "camera.jpg"
+		},
+		{ 	
+			"trip": "carlAdvent",
+			"person": "Carl Fredricksen",
+		    "description": "Adventure is out there",
+		    "img": "up.jpg"
+		}
+	],
+
+  	"terms" :[
+      {
+        "title" : "",
+        "description_one" : "Last updated: February 19, 2016",
+        "description_two" : "Please read these Terms and Conditions ('Terms', 'Terms and Conditions') carefully before using the wishtrip-v3.herokuapp.com website (the 'Service') operated by WishTrip ('us', 'we', or 'our'). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.",
+        "description_three" : "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."
+      },
+      {
+        "title" : "Accounts",
+        "description_one" : "When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.",
+        "description_two" : "You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.",
+        "description_three" : "You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account."
+      },
+      {
+        "title" : "Links To Other Web Sites",
+        "description_one" : "Our Service may contain links to third-party web sites or services that are not owned or controlled by WishTrip.",
+        "description_two" : "WishTrip has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that WishTrip shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.",
+        "description_three" : "We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit."
+      },
+      {
+        "title" : "Governing Law",
+        "description_one" : "These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.",
+        "description_two" : "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.",
+        "description_three" : ""
+      },
+      {
+        "title" : "Changes",
+        "description_one" : "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.",
+        "description_two" : "By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.",
+        "description_three" : ""
+      },
+      {
+        "title" : "Contact Us",
+        "description_one" : "If you have any questions about these Terms, please contact us at wishtraveltrip@gmail.com.",
+        "description_two" : "",
+        "description_three" : ""
+      }
+
+    ]
+}

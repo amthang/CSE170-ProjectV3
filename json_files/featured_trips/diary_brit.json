@@ -1,0 +1,21 @@
+{
+	"trip_title" : "Brittany's Paris Trip",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/tower.jpg",
+		    "place_visited": "Eiffel Tower",
+		    "description" : "Very beautiful, great view, but really cold! Tickets booths are located at the foot of the tower, you can go up via one of the two elevators, but you have to stand in a pretty long line at times."
+		},
+		{ 
+			"img": "images/featured_trips/museum.jpg",
+		    "place_visited": "Louvre Museum",
+		    "description" : "Lots of great art! Great for a person to come to see lot of amazing artwork! My friend enjoyed it more than I did. I'm not very patient at interpreting the art pieces."
+		},
+		{ 
+			"img": "images/featured_trips/palace.jpg",
+		    "place_visited": "Palace of Versailles",
+		    "description" : "This castle is my dream home! The outdoor view is amazing with the sculptures and lavish decorations."
+		}
+	]
+}

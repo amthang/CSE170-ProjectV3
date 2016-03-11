@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> head_info}}
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    {{> menu_bar_user}}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Saved Trips<br>
+                    <small>Check out travel diaries you have saved</small>
+                </h1>
+                <!-- <ol class="breadcrumb">
+                    <li><a href="/user_homepage">Home</a>
+                    </li>
+                    <li class="active">Blog Home One</li>
+                </ol> -->
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            {{#each saved_trips1}}
+            <div class="col-md-4 portfolio-item">
+                <a href="{{link}}">
+                    <img class="img-responsive" src="{{imgPath}}" alt="">
+                </a>
+                <h3>
+                    <a href="{{link}}">{{trip}}</a>
+                </h3>
+            </div>
+            {{/each}}
+        </div>
+
+        <hr>
+
+        <p align="center">WishTrip &copy; 2016</p>
+
+    </div>
+    <!-- /.container -->
+    {{> menu_bar_script}}
+
+</body>
+
+</html>

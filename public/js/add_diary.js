@@ -58,14 +58,17 @@ $('#newProjectSubmitButton2').click(function(e) {
 		console.log('clicked');
 		var title = $('#new-project-form #title').val();
 		var image_url = $('#new-project-form #image_url').val();
+		var image_upload = $('#new-project-form #image_upload').val();
 		var date = $('#new-project-form #date').val();
 		var summary = $('#new-project-form #summary').val();
 		var json = {
 			'project_title': title,
 			'image_url': image_url,
+			'image_upload' : image_upload,
 			'date':  date,
 			'summary': summary
 		};
+
 		$.post('/user_profile/new', json, function() {
 			window.location.href = '/user_profile'; // reload the page
 		});

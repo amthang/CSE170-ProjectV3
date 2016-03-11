@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head_info}}
+</head>
+<body>
+    {{> menu_bar_index}} 
+
+<section class="container">
+    <h2>Create Account</h2>
+    <form action="/login" method="post">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+      </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input type="password" class="form-control" id="pass"placeholder="Password" name="pass">
+      </div>
+
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input type="password" class="form-control" id="cpass"placeholder="Confirm Password" name="cpass">
+      </div>
+
+      <h4>By creating an account, you agree to our <span class="term"><a href="/terms">Terms and Conditions</a></span></h4>
+        <!--<button type="submit" class="float">Login</button>-->
+        <div class="row">
+              <div class="col-xs-4 col-md-4">
+                 <input type="submit" id="submitBtn" class="btn btn-dark btn-lg" onclick="check(this.form)" value="Create Account"></input>
+                <!-- <a href="/pro_land" class="btn btn-dark btn-lg signup" id="sign">Create Account</a> -->
+              </div>
+        </div>
+
+       </form>
+
+       <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                // if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                //     window.open('target.html')/*opens the target page while Id & password matches*/
+                // }
+                // else {
+                  if(form.pass.value != form.cpass.value){
+                    alert("Error! Passwords do not match!") }/*displays error message*/
+                // }
+            }
+        </script>
+</section>
+
+    <!-- scripts -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    {{> menu_bar_script}}
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head_info}}
+
+</head>
+<body>
+    {{> menu_bar_index}} 
+
+<section class="container-fluid support_v2" id="section5">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <h2 class="text-center lato">Support/Help</h2>
+            <hr>
+            {{#each help_info}}
+            <div class="media">
+                <h3>{{header}}</h3>
+                <div class="media-left">
+                    <!-- <img src="//placehold.it/100"> -->
+                    <img src="images/question.jpg" id="support_image">
+                </div>
+                <div class="media-body media-middle">
+                    <p>{{description}}</p>
+                </div>
+            </div>
+            <hr>
+            {{/each}}
+            <!-- <div class="media">
+                <h3>Boom</h3>
+                <div class="media-body media-middle">
+                    <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+                <div class="media-right">
+                    <img src="//placehold.it/100">
+                </div>
+            </div>
+            <hr>
+             -->
+
+        </div>
+    </div>
+</section>
+
+    {{> menu_bar_script}}
+</body>
+</html>

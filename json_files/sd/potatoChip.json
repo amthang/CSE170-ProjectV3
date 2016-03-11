@@ -1,0 +1,16 @@
+{
+	"trip_title": "Katie's Potato Chip Rock Hike",
+
+	"trip_info":[
+		{
+			"img": "/images/search_results/rock/pc1.jpg",
+			"place": "Another Trail",
+			"description": "A pretty long hike, but you are immersed in nature."
+		},
+		{
+			"img": "/images/search_results/rock/pc2.jpg",
+			"place": "Just a Chip in the Rock",
+			"description": "I hiked all the way up here just to see this?! It is interesting to see nature, but I still don't understand the hype."
+		}
+	]
+}

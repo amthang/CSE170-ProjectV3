@@ -1,0 +1,18 @@
+{
+	"title" : "Things to Try at Disneyland California",
+
+	"trip": [
+		{ 
+		    "place_visited": "Lobster Nachos at The Cove Bar",
+		    "description" : "Unbelievable. You simply must try them."
+		},
+		{ 
+		    "place_visited": "Pixar Play Parade",
+		    "description" : "This an awesome parade."
+		},
+		{ 
+		    "place_visited": "Fastpass!",
+		    "description" : "USE THEM, LIKE SERIOUSLY!"
+		}
+	]
+}

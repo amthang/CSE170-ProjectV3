@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{> head_info}}
+
+</head>
+
+<body>
+    {{> menu_bar_user}} 
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container feat_container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Featured Trips</h2>
+                    <hr class="small">
+                    <div class="row">
+                        {{#each feature}}
+                        <div class="col-md-6" id="feature_diary">
+                            <div class="portfolio-item">
+                                <a href="/travel_diary_{{trip}}_user">
+                                    <!-- <span class="caption">
+                                        <h2>{{person}}</h2>
+                                        <p class="desc">{{description}}</p>
+                                    </span> -->
+                                    <img id="feat_img" class="img-portfolio img-responsive" src="images/featured_trips/{{img}}" />
+                                    <p id="feat_name">Profile: {{person}}</p>
+                                    <p id="feat_des">{{description}}</p>
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        {{/each}}
+                    </div>
+                    <!-- /.row (nested) -->
+
+                    <a href="/search_results_feat_user" class="btn btn-dark btn-lg">View More Trips</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    {{> menu_bar_script}}
+
+</body>
+
+</html>

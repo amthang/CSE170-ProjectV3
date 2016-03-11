@@ -4,6 +4,7 @@ var sd_rsult = require('../json_files/sd.json');
 var hogwarts_rsult = require('../json_files/hogwarts.json');
 var error_msg = require('../json_files/error_msg.json');
 var balboa = require('../json_files/sd/balboa.json');
+var potatoChip = require('../json_files/sd/potatoChip.json');
 
 
 exports.renderResults = function(req, res){
@@ -39,4 +40,8 @@ exports.checkSearch = function(req, res){
 
 exports.displayBalboa = function(req, res){
 	res.render('view_trip', balboa);
+};
+
+exports.displayPotatoChip = function(req, res){
+	res.render('view_trip', potatoChip);
 };

@@ -1,0 +1,26 @@
+{
+	"title" : "Navigate through San Francisco!",
+
+	"trip": [
+		{ 
+		    "place_visited": "Golden Gate Bridge",
+		    "description" : "A great sight to see. Something that you do not normally see."
+		},
+		{ 
+		    "place_visited": "Fisherman's Wharf",
+		    "description" : "A great place for fresh food and slight ocean view! I find it to be great for kids, but adults can have fun too!"
+		},
+		{ 
+		    "place_visited": "Chinatown",
+		    "description" : "Lots of mini stores and markets, you can find plenty of small gifts here!"
+		},
+		{ 
+		    "place_visited": "Market Street",
+		    "description" : "You can see a few tech companies located on this street, and there is a pretty huge outdoor mall there too (at least I think it seems like a mall to me!)"
+		},
+		{ 
+		    "place_visited": "To be continued",
+		    "description" : "I am still travelling and searching for more hidden gems in the city! Visit my page later to see the updated posts!"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"help_info":[
+		{ 	"header": "What is the purpose of the site?",
+		    "description": "A place where you can record and share your travel stories with the world! Or you can view other spectacular stories and travel destinations from other people."
+		},
+		{ 	"header": "Can I view travel diaries without an account?",
+		    "description": "Yes! Stories are made public."
+		},
+		{ 	"header": "How can I make an account?",
+		    "description": "Click on 'Create Account' on the home screen, or simply choose 'Sign In' from the menu bar."
+		},
+		{ 	"header": "Why am I limited on the search results?",
+		    "description": "The development team is currently working on the entire website. Please bear with us as we are doing our best to allow you to have the best experience!"
+		},
+		{ 	"header": "Some of the features are not working!",
+		    "description": "Please bear with us as we are doing our best to complete the website!"
+		},
+		{ 	"header": "Why Hello There",
+		    "description": "HIIIIII, THANK YOU FOR VISITING!"
+		}
+	]
+}

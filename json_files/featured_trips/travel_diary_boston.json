@@ -1,0 +1,18 @@
+{
+	"title" : "A Week on the East",
+
+	"trip": [
+		{ 
+		    "place_visited": "Old Town Trolley Tours of Boston",
+		    "description" : "Really good tour! You get to see more of the city and build up your list of 'to see' places on your list, but it was overpriced than I expected."
+		},
+		{ 
+		    "place_visited": "Fenway Park",
+		    "description" : "My children loved this place!"
+		},
+		{ 
+		    "place_visited": "Swan Boats",
+		    "description" : "In my opinion, you have to get on this boat when you are in town!"
+		}
+	]
+}

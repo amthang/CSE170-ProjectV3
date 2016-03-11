@@ -1,0 +1,18 @@
+{
+	"title" : "Month in Hong Kong",
+
+	"trip": [
+		{ 
+		    "place_visited": "Tian Tan Buddha",
+		    "description" : "A great sight to see. Something that you do not normally see in the US."
+		},
+		{ 
+		    "place_visited": "Ocean Park Hong Kong",
+		    "description" : "A fun-filled amusement park. I find it to be great for kids, but adults can have fun too!"
+		},
+		{ 
+		    "place_visited": "Hong Kong Science Museum",
+		    "description" : "Lots of great work to see here!"
+		}
+	]
+}

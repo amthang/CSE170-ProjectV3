@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+<head>
+	{{> head_info}}
+</head>
+
+<body>
+	{{> menu_bar_user}}
+
+	<div class="container">
+		{{#each trip_errMsg}}
+        	<p>{{msg}}</p>
+        {{/each}}
+
+		<h4>{{trip_title}}</h4>
+
+		{{#each trip_info}}
+		<div class="project" id="project{{id}}">
+			<div class="thumbnail">
+				<img src="{{img}}" class="img project-img">
+				<p>{{place}}</p>
+				<div class="details">{{description}}</div>
+			</div>
+		</div>
+		{{/each}}
+
+	<hr />
+	</div>
+
+	{{> menu_bar_script}}
+
+</body>
+</html>

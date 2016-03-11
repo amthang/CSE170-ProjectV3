@@ -20,7 +20,8 @@ exports.addTripToPage = function(req, res){
 		// "circle_position" : "fa fa-circle",
 		"title" : form_data["project_title"],
 		// "location" : "newTrip",
-		"image" : form_data["image_url"],
+		 "image" : form_data["image_url"],
+		//"image" : form_data["image_upload"],
 		"description" : form_data["summary"],
 		"date" : form_data["date"],
 	});

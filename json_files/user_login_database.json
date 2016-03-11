@@ -1,0 +1,24 @@
+{
+  "users" :[
+    {
+      "email" : "hello@world.com",
+      "password" : "welcome"
+    },
+    {
+      "email" : "hello1@world.com",
+      "password" : "welcome"
+    },
+    {
+      "email" : "hello2@world.com",
+      "password" : "welcome"
+    }
+  ],
+
+  "msg" :[
+    {
+      "errormsg" : "The account you entered doesn't exist."
+    }
+  ],
+
+  "current": []
+}

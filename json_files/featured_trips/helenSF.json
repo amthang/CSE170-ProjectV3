@@ -1,0 +1,31 @@
+{
+	"trip_title" : "Exploring San Francisco!",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/sf_bridge.jpg",
+		    "place": "Golden Gate Bridge",
+		    "description" : "A great sight to see. Something that you do not normally see."
+		},
+		{ 
+			"img": "images/featured_trips/wharf.jpg",
+		    "place_visited": "Fisherman's Wharf",
+		    "description" : "A great place for fresh food and slight ocean view! I find it to be great for kids, but adults can have fun too!"
+		},
+		{ 
+			"img": "images/featured_trips/sf_chinatown.jpg",
+		    "place_visited": "Chinatown",
+		    "description" : "Lots of mini stores and markets, you can find plenty of small gifts here!"
+		},
+		{ 
+			"img": "images/featured_trips/sf_market.jpg",
+		    "place_visited": "Market Street",
+		    "description" : "You can see a few tech companies located on this street, and there is a pretty huge outdoor mall there too (at least I think it seems like a mall to me!)"
+		},
+		{ 
+			"img": "images/featured_trips/sf.jpg",
+		    "place_visited": "To be continued",
+		    "description" : "I am still travelling and searching for more hidden gems in the city! Visit my page later to see the updated posts!"
+		}
+	]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> head_info}}
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="../routes/pro_land.js"></script>
+</head>
+<body>
+    {{> menu_bar_index}} 
+    
+<section class="container">
+    <h2>Sign in</h2>
+    <form action="/user_profile" method="post">
+      {{#each msg}}
+      <h4>{{errormsg}}</h4>
+      {{/each}}
+      
+      <div class="input-group input-group-lg input_size">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control email" placeholder="Email" id="email" name="email" />
+      </div>
+
+      <div class="input-group input-group-lg input_size">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input type="password" class="form-control password" placeholder="Password" name="password" id="password"/>
+      </div>
+      
+      <!--<button type="submit" class="float">Login</button>-->
+      <div class="row row_one">
+        <div class="col-xs-4 col-md-4">
+          <!-- <a href="/pro_land" class="btn btn-dark btn-lg" id="sign">Login</a> -->
+           <button name="signin_btn" class="btn btn-dark btn-lg" type="submit" onclick="validateForm(this.form)">Sign in</button>
+        </div>
+      </div>
+
+      <div class="row row_two">
+        <div class="col-xs-4 col-md-4">
+          <a href="/create_account" class="btn btn-dark btn-lg signup" id="sign">Create Account</a>
+        </div>
+      </div>
+
+      <div class="row row_three">
+        <div class="col-xs-4 col-md-4">
+          <a href="/forgot_pw" class="btn btn-dark btn-lg signup" id="sign">Forgot Password</a>
+        </div>
+      </div>
+    </form>
+
+    <script language="javascript">
+      function validateForm(form)
+      {
+        var x = form.email.value;
+        var y = form.password.value;
+        if(x==null || x=="")
+        {
+          alert("Please fill in your email.");
+          return false;
+        }
+        else if(x=="" && y==null)
+        {
+          alert("Please enter an appropriate email and password.");
+          return false;
+        }
+        else if(y=="")
+        {
+          alert("Please enter a password");
+          return false;
+        }
+      }
+    </script>
+</section>
+
+  {{> menu_bar_script}}
+</body>
+</html>
