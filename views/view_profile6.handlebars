@@ -1,0 +1,60 @@
+<html>
+    <head>
+        {{> head_info}}
+
+        <link rel="stylesheet" href="css/public_profile.css" />
+        <link rel="stylesheet" href="css/custom_changes.css" />
+    </head>
+
+<body>
+    {{> menu_bar_user}}
+    <section>
+        <img class="profile_img" id="profile_img" src="images/user/hermione.jpg"></img>
+    </section>
+
+    <h3><center>Hermione</h3></center>
+    
+    <div class="diaries" id="diaries">
+        <ul class="timeline">
+            {{#each profile_data}}
+            <li class="{{invert}}" id="profile_blocks">
+                <!-- <div class="timeline-badge">
+                  <a><i class="{{circle_position}}" id=""></i></a>
+                </div> -->
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>{{title}}</h4>
+                    </div>
+                    <a href="#">
+                    <!-- <a href="/user_see_diary_{{location}}" class="btn-theme"> -->
+                    <div class="timeline-body">
+                        <!-- <img id="img_size" src="{{image}}"></img>
+                        <p>{{description}}</p> -->
+
+                        <div class="project" id="project{{id}}">
+                            <div class="thumbnail">
+                                    <img src="{{image}}" alt="Lorem Pixel image" class="img project-img">
+                                    <!-- <p>{{title}}</p> -->
+                                <div class="details"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-footer">
+                        <p class="text-right">{{date}}</p>
+                    </div>
+                </a>
+                </div>
+            </li>
+            {{/each}}
+            
+            <li class="clearfix no-float"></li>
+        </ul>
+    </div>
+    
+    {{> menu_bar_script}}
+    <script src="/js/add_diary.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+	"trip_title" : "My Month in Canada",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/canada.jpg",
+		    "place": "Vancouver",
+		    "description" : "A great sight to see. Something that you do not normally see."
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"trip_title" : "Wine Tasting in Paris",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/tower.jpg",
+		    "place_visited": "Le Troquet des Glaces",
+		    "description" : "Great wine"
+		},
+		{ 
+			"img": "images/featured_trips/tower.jpg",
+		    "place_visited": "Les Caves de Prague",
+		    "description" : "Awesome drinks"
+		},
+		{ 
+		    "img": "images/featured_trips/tower.jpg",
+		    "place_visited": "Le Baron Rouge",
+		    "description" : "Very nice"
+		}
+	]
+}

@@ -21,6 +21,7 @@ var search_results = require('./routes/search_results');
 var future_diary = require('./routes/future_diary');
 var add_future_diary = require('./routes/add_future_diary');
 var signin = require('./routes/signin');
+var view_profile = require('./routes/view_profile');
 
 // Example route
 // var user = require('./routes/user');
@@ -126,14 +127,25 @@ app.post('/future_travels/:id/delete', add_future_diary.deleteTrip);
 // Render these pages when viewing a featured trip or saved trip
 app.get('/travel_diary_helenSF', simplyRender.renderHelenTrip);
 app.get('/travel_diary_helenSF_user', simplyRender.renderHelenTrip_user);
+app.get('/travel_diary_stevenCanada', simplyRender.renderCanadaTrip);
+app.get('/travel_diary_stevenCanada_user', simplyRender.renderCanadaTrip_user);
+app.get('/travel_diary_anjelicaParis', simplyRender.renderParisTrip);
+app.get('/travel_diary_anjelicaParis_user', simplyRender.renderParisTrip_user);
+app.get('/travel_diary_anjelicaParis', simplyRender.renderParisTrip);
+app.get('/travel_diary_anjelicaParis_user', simplyRender.renderParisTrip_user);
+app.get('/travel_diary_carlAdvent', simplyRender.renderUp);
+app.get('/travel_diary_carlAdvent_user', simplyRender.renderUp_user);
 
 app.get('/travel_diary_boston', simplyRender.renderBoston);
 app.get('/travel_diary_boston_user', simplyRender.renderBoston_user);
+app.get('/travel_diary_brittany', simplyRender.renderBrit);
 app.get('/travel_diary_brittany_user', simplyRender.renderBrit_user);
+app.get('/travel_diary_wine_user', simplyRender.renderWine_user);
 
 // Render these pages when viewing a trip
 app.get('/view_trip_balboa', search_results.displayBalboa);
 app.get('/view_trip_potato_chip', search_results.displayPotatoChip);
+app.get('/view_trip_brittany', simplyRender.renderBrit);
 // app.get('/view_trip_downtown_sd', search_results.displayTrip);
 // app.get('/view_trip_la_jolla_surf', search_results.displayTrip);
 // app.get('/view_trip_anza_borrego_camping', search_results.displayTrip);
@@ -145,6 +157,15 @@ app.get('/view_trip_potato_chip', search_results.displayPotatoChip);
 // app.get('/view_trip_');
 // app.get('/view_trip_');
 
+app.get('/AnjelicaThang', view_profile.renderAnjelica);
+app.get('/StevenDuong', view_profile.renderSteven);
+app.get('/HelenCheng', view_profile.renderHelen);
+app.get('/JoelKrejmas', view_profile.renderJoel);
+app.get('/HarryPotter', view_profile.renderHarry);
+app.get('/RonWeasley', view_profile.renderRon);
+app.get('/HermioneGranger', view_profile.renderHermione);
+app.get('/SeverusSnape', view_profile.renderSnape);
+app.get('/AlbusDumbledore', view_profile.renderAlbus);
 
 // Example route
 // app.get('/users', user.list);

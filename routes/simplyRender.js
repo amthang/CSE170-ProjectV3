@@ -8,6 +8,11 @@ var boston = require('../json_files/featured_trips/travel_diary_boston.json');
 var saved_profiles = require('../json_files/saved_profiles.json');
 var saved_trips = require('../json_files/saved_trips.json');
 var brit = require('../json_files/featured_trips/diary_brit.json');
+var wine= require('../json_files/featured_trips/diary_wine.json');
+var canada = require('../json_files/featured_trips/canada.json');
+var paris = require('../json_files/featured_trips/paris.json');
+var adventure = require('../json_files/featured_trips/adventure.json');
+
 
 /*
  * GET home page.
@@ -43,6 +48,30 @@ exports.renderHelenTrip = function(req, res){
 
 exports.renderHelenTrip_user = function(req, res){
 	res.render('view_trip_user', helenSF);
+};
+
+exports.renderCanadaTrip = function(req, res){
+	res.render('view_trip', canada);
+};
+
+exports.renderCanadaTrip_user = function(req, res){
+	res.render('view_trip_user', canada);
+};
+
+exports.renderParisTrip = function(req, res){
+	res.render('view_trip', paris);
+};
+
+exports.renderParisTrip_user = function(req, res){
+	res.render('view_trip_user', paris);
+};
+
+exports.renderUp = function(req, res){
+	res.render('view_trip', adventure);
+};
+
+exports.renderUp_user = function(req, res){
+	res.render('view_trip_user', adventure);
 };
 
 exports.renderBoston = function(req, res){
@@ -97,6 +126,10 @@ exports.renderSavedTrips = function(req, res){
 	res.render('saved_trips',saved_trips);
 };
 
+exports.renderBrit = function(req, res){
+	res.render('view_trip', brit);
+}
+
 exports.renderBrit_user = function(req, res){
 	res.render('view_trip_user', brit);
 }
@@ -112,3 +145,7 @@ exports.renderContact_user = function(req, res){
 exports.renderSupportHelp_user = function(req, res){
 	res.render('support_help_user', support);
 };
+
+exports.renderWine_user = function(req, res){
+	res.render('view_trip_user', wine);
+}

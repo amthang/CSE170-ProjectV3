@@ -7,7 +7,7 @@ exports.view = function(req, res){
 		.exec(renderPage);
 
 	function renderPage(err, future_travels) {
-		res.render('add_future_diary');
+		res.render('add_future_diary', {'profile_data': future_travels});
 	}
 
 };

@@ -1,0 +1,11 @@
+{
+	"trip_title" : "Adventure is out there",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/disney.jpg",
+		    "place": "Everywhere!",
+		    "description" : "A great sight to see. Something that you do not normally see."
+		}
+	]
+}

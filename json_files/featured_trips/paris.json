@@ -1,0 +1,11 @@
+{
+	"trip_title" : "A Day in Paris",
+
+	"trip_info": [
+		{ 
+			"img": "images/featured_trips/tower.jpg",
+		    "place": "Paris",
+		    "description" : "A great sight to see. Something that you do not normally see."
+		}
+	]
+}
